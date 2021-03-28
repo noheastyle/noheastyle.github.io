@@ -10,7 +10,8 @@ jQuery(document).ready(function() {
     /*
 	    Countdown initializer
 	*/
-    var countTo = new Date(2021, 2, 30, 12);
+    // var countTo = new Date(2021, 2, 30, 12);
+    var countTo = new Date("Mar 30 2021 19:00:00 GMT+0800");
     $('.timer').countdown(countTo, function(event) {
         $(this).find('.days').text(event.offset.totalDays);
         $(this).find('.hours').text(event.offset.hours);
